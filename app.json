@@ -1,7 +1,7 @@
 {
   "name": "Node.js Getting Started",
   "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/martinacd08/-stormy-stream-2322",
-  "logo": "https://stormy-stream-2322//node.svg",
+  "repository": "https://github.com/martinacd08/polar-bastion-2739",
+  "logo": "https://polar-bastion-2739/node.svg",
   "keywords": ["node", "express", "static"]
 }

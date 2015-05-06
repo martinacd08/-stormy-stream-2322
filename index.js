@@ -1,8 +1,5 @@
-var express = require('express');
-var app = express();
 
-app.set('port', (process.env.PORT || 5000));
-app.use(express.static(__dirname + '/public'));
+
 
 
 var express = require('express'),
@@ -14,7 +11,11 @@ var express = require('express'),
         password : 'proyecto',
         database : 'rigarcia_proyecto'
     }),
-res.setHeader({ 'Content-Type': 'application/json' });
+	
+	app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
+
+
 app.get('/', function(req,res){
     connectionpool.getConnection(function(err, connection) {
         if (err) {

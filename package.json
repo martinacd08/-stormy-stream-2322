@@ -1,22 +1,25 @@
-
-
 {
-  "name": "ComputoDistribuido",
-  "version": "0.0.1",
-  "description": "Proyecto de Majahide",
-  "main": "app.js" , 
+  "name": "node-js-getting-started",
+  "version": "0.1.3",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/martinacd08/-stormy-stream-2322.git"
+    "url": "https://github.com/martinacd08/-stormy-stream-2322"
   },
-  "dependencies":{"express":"*", "mysql":"*","angular":"1.3.15"},
   "keywords": [
-    "majahide"
+    "node",
+    "heroku",
+    "express"
   ],
-  "author": "Martin Camacho",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/martinacd08/-stormy-stream-2322/issues"
-  },
-  "homepage": "https://github.com/martinacd08/-stormy-stream-2322"
+  "license": "MIT"
 }

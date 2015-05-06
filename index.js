@@ -13,7 +13,7 @@ var mysql   = require('mysql'),
     });
 
 
-app.get('/', function(request, response) {
+app.get('/', function(req, res) {
   //response.send('Hello World!');
    connectionpool.getConnection(function(err, connection) {
         if (err) {

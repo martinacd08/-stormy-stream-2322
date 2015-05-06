@@ -15,7 +15,7 @@ var express = require('express'),
         database : 'rigarcia_proyecto'
     }),
 res.setHeader({ 'Content-Type': 'application/json' });
-app.get('/:table', function(req,res){
+app.get('/', function(req,res){
     connectionpool.getConnection(function(err, connection) {
         if (err) {
             console.error('CONNECTION error: ',err);
@@ -25,7 +25,7 @@ app.get('/:table', function(req,res){
                 err:    err.code
             });
         } else {
-            connection.query('SELECT * FROM '+req.params.table, function(err, rows, fields) {
+            connection.query('SELECT * FROM frac', function(err, rows, fields) {
                 if (err) {
                     console.error(err);
                     res.statusCode = 500;
@@ -46,10 +46,7 @@ app.get('/:table', function(req,res){
         }
     });
 });
-app.get('/:table/:id', function(req,res){});
-app.post('/:table', function(req,res){});
-app.put('/:table/:id', function(req,res){});
-app.delete('/:table/:id', function(req,res){});
+
  
 app.listen(3000);
 console.log('Rest Demo Listening on port 3000');

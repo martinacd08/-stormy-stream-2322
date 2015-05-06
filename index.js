@@ -12,7 +12,7 @@ var express = require('express'),
         database : 'rigarcia_proyecto'
     }),
 	
-	app.set('port', (process.env.PORT || 5000));
+	
 app.use(express.static(__dirname + '/public'));
 
 
@@ -48,7 +48,7 @@ app.get('/', function(req,res){
     });
 });
 
- 
-app.listen(3000);
+ app.set('port', (process.env.PORT || 5000));
+app.listen(5000);
 console.log('Rest Demo Listening on port 3000');
 

@@ -1,4 +1,4 @@
-
+/*
 
 
 
@@ -51,4 +51,18 @@ app.use(express.static(__dirname + '/public'));
  app.set('port', (process.env.PORT || 5000));
 app.listen(5000);
 console.log('Rest Demo Listening on port 5000');
+*/
 
+
+var soap = require('soap-server');
+
+function MyTestService(){
+}
+MyTestService.prototype.test1 = function(myArg1, myArg2){
+    return myArg1 + myArg2;
+};
+
+var soapServer = new soap.SoapServer();
+var soapService = soapServer.addService('testService', new MyTestService());
+    
+soapServer.listen(1337, 'http://polar-bastion-2739.herokuapp.com/');

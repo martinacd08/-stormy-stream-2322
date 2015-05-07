@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> parent of d421d87... dos metodos rest
 
 
 
@@ -10,6 +14,7 @@ var express = require('express'),
         user     : 'rigarcia_proyect',
         password : 'proyecto',
         database : 'rigarcia_proyecto'
+<<<<<<< HEAD
 <<<<<<< HEAD
     });
 
@@ -58,6 +63,44 @@ app.get('/:table/:id', function(req,res){});
 app.post('/:table', function(req,res){});
 app.put('/:table/:id', function(req,res){});
 app.delete('/:table/:id', function(req,res){});
+=======
+    }),
+	
+
+
+
+app.get('/', function(req,res){
+    connectionpool.getConnection(function(err, connection) {
+        if (err) {
+            console.error('CONNECTION error: ',err);
+            res.statusCode = 503;
+            res.send({
+                result: 'error',
+                err:    err.code
+            });
+        } else {
+            connection.query('SELECT * FROM frac', function(err, rows, fields) {
+                if (err) {
+                    console.error(err);
+                    res.statusCode = 500;
+                    res.send({
+                        result: 'error',
+                        err:    err.code
+                    });
+                }
+                res.send({
+                    result: 'success',
+                    err:    '',
+                    fields: fields,
+                    json:   rows,
+                    length: rows.length
+                });
+                connection.release();
+            });
+        }
+    });
+});
+>>>>>>> parent of d421d87... dos metodos rest
 	
 app.use(express.static(__dirname + '/public'));
  app.set('port', (process.env.PORT || 5000));

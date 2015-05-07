@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> parent of d421d87... dos metodos rest
 =======
 
 >>>>>>> parent of d421d87... dos metodos rest
@@ -14,6 +18,7 @@ var express = require('express'),
         user     : 'rigarcia_proyect',
         password : 'proyecto',
         database : 'rigarcia_proyecto'
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     });
@@ -68,6 +73,12 @@ app.delete('/:table/:id', function(req,res){});
 	
 
 
+=======
+    }),
+	
+
+
+>>>>>>> parent of d421d87... dos metodos rest
 
 app.get('/', function(req,res){
     connectionpool.getConnection(function(err, connection) {

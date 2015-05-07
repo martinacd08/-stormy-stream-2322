@@ -8,6 +8,7 @@ var express = require('express'),
         database : 'rigarcia_proyecto'
     });
 
+
 	
 app.get('/', function(req,res){
     connectionpool.getConnection(function(err, connection) {
@@ -72,6 +73,12 @@ app.get('/:table', function(req,res){
         }
     });
 });
+
+
+app.get('/:table/:id', function(req,res){});
+app.post('/:table', function(req,res){});
+app.put('/:table/:id', function(req,res){});
+app.delete('/:table/:id', function(req,res){});
 	
 app.use(express.static(__dirname + '/public'));
  app.set('port', (process.env.PORT || 5000));

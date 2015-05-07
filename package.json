@@ -13,11 +13,7 @@
   "keywords": [
     "majahide"
   ],
-<<<<<<< HEAD
-  "license": "MIT"
-  
-}
-=======
+
   "author": "Martin Camacho",
   "license": "ISC",
   "bugs": {
@@ -25,4 +21,4 @@
   },
   "homepage": "https://github.com/martinacd08/polar-bastion-2739"
 }
->>>>>>> origin/master
+

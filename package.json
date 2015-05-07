@@ -1,26 +1,28 @@
+
+
 {
   "name": "node-js-getting-started",
-  "version": "0.1.3",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "~4.9.x", "mysql": "*"
-  },
-  "engines": {
-    "node": "0.12.2"
-  },
+  "version": "0.0.1",
+  "description": "Proyecto de Majahide",
+  "main": "app.js" , 
   "repository": {
     "type": "git",
-    "url": "https://github.com/martinacd08/-stormy-stream-2322"
+    "url": "https://github.com/martinacd08/polar-bastion-2739.git"
   },
+  "dependencies":{"express":"~4.9.x", "mysql":"*"},
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "majahide"
   ],
+<<<<<<< HEAD
   "license": "MIT"
   
 }
+=======
+  "author": "Martin Camacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinacd08/fpolar-bastion-27392/issues"
+  },
+  "homepage": "https://github.com/martinacd08/polar-bastion-2739"
+}
+>>>>>>> origin/master
